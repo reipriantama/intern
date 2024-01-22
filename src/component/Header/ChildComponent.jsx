@@ -4,7 +4,7 @@ const ChildComponent = (props) => {
   return (
     <div>
       <button
-        className='px-2 py-2 m-3 font-bold text-black uppercase bg-gray-600 rounded-full cursor-pointer'
+        className='px-2 py-2 m-3 font-bold text-black uppercase bg-gray-600 rounded cursor-pointer'
         type='button'
         onClick={props.alert}
       >

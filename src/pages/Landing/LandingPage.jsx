@@ -1,12 +1,12 @@
-import React from 'react';
-import Header from '../../component/Header/Header';
-import ChildComponent from '../../component/Header/ChildComponent';
+import React from "react";
+import Header from "../../component/Header/Header";
+import ConditionalRendering from "../../component/ConditionalRendering/ConditionalRendering";
 
 const LandingPage = () => {
   return (
     <div>
       <Header />
-      <ChildComponent />
+      <ConditionalRendering />
     </div>
   );
 };
