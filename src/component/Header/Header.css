@@ -1,8 +1,10 @@
 .title {
-  margin: 100px;
+  width: auto;
   border: solid red;
   background-color: aqua;
+  margin: 100px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-/* asdasdsa */
   

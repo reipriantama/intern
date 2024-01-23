@@ -10,20 +10,20 @@ const ConditionalRendering = () => {
 
   return (
     <div>
-      <h1 className="uppercase flex justify-center text-4xl">
+      <h1 className="flex justify-center text-4xl uppercase">
         conditional rendering test
       </h1>
       <div className="flex justify-center">
         {buttonShown ? (
           <button
-            className="w-auto p-2 m-5 bg-red-500 rounded text-white"
+            className="w-auto p-2 m-5 text-white bg-red-500 rounded"
             onClick={() => setButtonShown(false)}
           >
             klik disini untuk menyembunyikan text
           </button>
         ) : (
           <button
-            className="w-auto p-2 m-5 bg-sky-500 rounded text-white"
+            className="w-auto p-2 m-5 text-white rounded bg-sky-500"
             onClick={() => setButtonShown(true)}
           >
             klik disini untuk munculkan text
@@ -39,7 +39,7 @@ const ConditionalRendering = () => {
 
       <div className="flex justify-center">
         <button
-          className="w-auto p-2 m-5 bg-indigo-500 rounded text-white"
+          className={`w-auto p-2 m-5 bg-${boxShown ? "red":"indigo"}-500 rounded text-white`}
           onClick={handleBoxShown}
         >
           klik disini untuk {boxShown ? "hilangkan" : "munculkan"} box
@@ -47,7 +47,7 @@ const ConditionalRendering = () => {
       </div>
       <div className="flex justify-center">
         {boxShown && (
-          <div className="size-20 border-8 border-indigo-300 flex items-center justify-center">
+          <div className="flex items-center justify-center border-8 border-indigo-300 size-20 bg-slate-950">
             box
           </div>
         )}

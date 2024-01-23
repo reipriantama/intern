@@ -11,7 +11,7 @@ const Header = () => {
   };
   return (
     <div>
-      <h1 className="title">Title {1 + 1}</h1>
+      <h1 className="title">Title</h1>
       <p
         style={{
           width: "200px",
