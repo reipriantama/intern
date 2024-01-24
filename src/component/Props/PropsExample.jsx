@@ -2,14 +2,13 @@ import React from 'react'
 import ChildrenComponent from './ChildrenComponent'
 
 const PropsExample = () => {
-const message = "Hello World!!!"
 
   return (
     <div>
       <h1>
-        {message}
+        Mengirim props
       </h1>
-      <ChildrenComponent message={message} />
+      <ChildrenComponent message={"Menerima props"} />
     </div>
   )
 }

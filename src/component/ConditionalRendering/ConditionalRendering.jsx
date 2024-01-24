@@ -31,7 +31,7 @@ const ConditionalRendering = () => {
         )}
       </div>
 
-      {buttonShown && (
+      {!!buttonShown && (
         <div className="flex justify-center">
           <p>Ini teks yang muncul setelah tombol diklik!</p>
         </div>
@@ -39,7 +39,7 @@ const ConditionalRendering = () => {
 
       <div className="flex justify-center">
         <button
-          className={`w-auto p-2 m-5 bg-${boxShown ? "red":"indigo"}-500 rounded text-white`}
+          className="w-auto p-2 m-5 text-white bg-indigo-500 rounded"
           onClick={handleBoxShown}
         >
           klik disini untuk {boxShown ? "hilangkan" : "munculkan"} box
@@ -47,7 +47,7 @@ const ConditionalRendering = () => {
       </div>
       <div className="flex justify-center">
         {boxShown && (
-          <div className="flex items-center justify-center border-8 border-indigo-300 size-20 bg-slate-950">
+          <div className="flex items-center justify-center border-8 border-indigo-300 size-20 bg-sky-500">
             box
           </div>
         )}

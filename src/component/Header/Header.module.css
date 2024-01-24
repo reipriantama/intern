@@ -2,8 +2,11 @@
     width: 100px;
     color: red;
     cursor: pointer;
-    background-color: aqua;
     border-radius: 10px;
+}
+
+.buttonColor{
+    background-color: blue;
 }
 
 

@@ -16,14 +16,14 @@ const Header = () => {
         style={{
           width: "200px",
           margin: "10px",
-          color: "blue",
+          // color: "blue",
           backgroundColor: `${color}`,
         }}
       >
         My Favorite Color is {color}
       </p>
       <button
-        className={styles.button}
+        className={`${styles.button} ${styles.buttonColor}`}
         type="button"
         onClick={() => alertButton("green")}
       >
